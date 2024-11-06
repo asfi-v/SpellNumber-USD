@@ -136,7 +136,14 @@ Function GetDigit(Digit)
 End Function
 ```
 
-### Example
-```vba
-= SpellNumber(1234.56)
-' Output: "One Thousand Two Hundred Thirty Four Dollars and Fifty Six Cents Only"
+## Example
+1. Type the formula =SpellNumber(A1) into the cell where you want to display a written number, where A1 is the cell containing the number you want to convert. You can also manually type the value like =SpellNumber(1234.56)
+2. Press Enter to confirm the formula.
+   
+   ![image](https://github.com/user-attachments/assets/8d027f05-8261-4249-b8bc-48fda60b526d)
+   
+5. Save your SpellNumber function workbook.
+6. _Excel cannot save a workbook with macro functions in the standard macro-free workbook format (.xlsx). If you click File > Save. A VB project dialog box opens. Click No._
+   
+
+
