@@ -43,23 +43,29 @@ Function SpellNumber(ByVal MyNumber)
                 End If
                 Count = Count + 1
         Loop
-        Select Case Dollars
-                Case ""
-                        Dollars = "No Dollars"
-                Case "One"
-                        Dollars = "One Dollar"
-                 Case Else
-                        Dollars = Dollars & " Dollars"
-        End Select
-        Select Case Cents
-                Case ""
-                        Cents = " and No Cents"
-                Case "One"
-                        Cents = " and One Cent"
-                Case Else
-                        Cents = " and " & Cents & " Cents"
-        End Select
-        SpellNumber = Dollars & Cents & " Only"
+        If Dollars <> "" Then
+            Select Case Dollars
+                    Case "One"
+                            Dollars = "One Dollar"
+                     Case Else
+                            Dollars = Dollars & " Dollars"
+            End Select
+        End If
+        If Cents <> "" Then
+            Select Case Cents
+                    Case "One"
+                            Cents = "One Cent"
+                    Case Else
+                            Cents = Cents & " Cents"
+            End Select
+        End If
+        If Dollars = "" Then
+            SpellNumber = Cents & " Only"
+        ElseIf Cents = "" Then
+            SpellNumber = Dollars & " Only"
+        Else
+            SpellNumber = Dollars & " and " & Cents & " Only"
+        End If
 End Function
  
 Function GetHundreds(ByVal MyNumber)
