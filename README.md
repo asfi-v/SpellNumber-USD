@@ -1,11 +1,15 @@
 # SpellNumber-USD
 This repository contains a VBA (Visual Basic for Applications) script that converts numerical values into their corresponding English words. The script is designed to handle large numbers and includes functionality to append “Only” at the end of the converted text, making it suitable for financial documents and other applications where precise wording is required.
 
+This function is designed to be used in Excel VBA projects but can be adapted for other VBA environments.
+
 ## Features
 - Converts numbers to words, including large values up to trillions.
 - Handles both whole numbers and decimal values.
 - Appends "Only" at the end of the converted text for clarity.
 - Easy to integrate into Excel and other VBA-supported applications.
+- Handles Large Numbers: Converts numbers up to the trillions.
+- Decimal Support: Accurately spells out the cents portion for decimal values.
 
 ## Usage
 1. Copy the VBA code from the repository.
